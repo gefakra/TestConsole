@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace TestConsole
 {
     public class Pallet : WarehouseObject
-    {
-        private float _Weight;     
+    {  
         public List<Box> Boxes { get; set; }
 
         public DateTime ExpirationDate => Convert.ToDateTime(Boxes.Min(box => box.ExpirationDate)).Date;              
